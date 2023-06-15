@@ -127,8 +127,7 @@ public class HelloClasslist {
         String CSCD   = "string" + s + "string" + d;
 
         // Some archived cache classes not always loaded, ensure they are via these
-        //
-        String  fdbi = Float.toString(4.0f);    // FDBigInteger
+        String  fdbi = "double :" + (1 / 17.0); // FDBigInteger: Use Prime to ensure significant digits
         Byte    bc   = Byte.valueOf((byte)1);   // ByteCache
         Short   sc   = Short.valueOf((short)2); // ShortCache
         Integer ic   = Integer.valueOf(8);      // IntegerCache
