@@ -126,6 +126,13 @@ public class HelloClasslist {
         String CDS    = "string" + d + s;
         String CSCD   = "string" + s + "string" + d;
 
+        // Some archived cache classes not always loaded, ensure they are via these
+        String  fdbi = Float.toString(4.0f);    // FDBigInteger
+        Byte    bc   = Byte.valueOf((byte)1);   // ByteCache
+        Short   sc   = Short.valueOf((short)2); // ShortCache
+        Integer ic   = Integer.valueOf(8);      // IntegerCache
+        Long    lc   = Long.valueOf(9L);        // LongCache
+
         String newDate = DateTimeFormatter.ISO_LOCAL_DATE_TIME.format(
                 LocalDateTime.now(ZoneId.of("GMT")));
 
