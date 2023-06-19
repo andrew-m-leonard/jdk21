@@ -129,7 +129,7 @@ public class HelloClasslist {
 System.out.println("HELLOCLASSLIST: "+i);
 
         // Some archived cache classes not always loaded, ensure they are via these
-        String  fdbi = "double :" + (i / 17.0); // FDBigInteger: Use Prime to ensure significant digits
+        String  fdbi = "double :" + 5.6; // FDBigInteger: Use Prime to ensure significant digits
 System.out.println("HELLOCLASSLIST fdbi: "+fdbi);
         Byte    bc   = Byte.valueOf((byte)1);   // ByteCache
         Short   sc   = Short.valueOf((short)2); // ShortCache
